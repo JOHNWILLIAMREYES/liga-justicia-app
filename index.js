@@ -7,6 +7,9 @@ app.get('/', (req, res) => {
   res.send('¡Hola, mundo!');
 });
 app.get('/pokeApi/:pokemon_id', (req, res) => {
+  const {
+    params: { pokemon_id },
+  } = req;
   let config = {
     method: 'get',
     maxBodyLength: Infinity,
