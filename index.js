@@ -13,7 +13,7 @@ app.get('/pokeApi/:pokemon_id', (req, res) => {
   let config = {
     method: 'get',
     maxBodyLength: Infinity,
-    url: `https://pokeapi.co/api/v2/gender/${pokemon_id}`,
+    url: `https://pokeapi.co/api/v2/pokemon/${pokemon_id}`,
     headers: {},
   };
 
